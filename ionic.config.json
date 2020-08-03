@@ -1,0 +1,7 @@
+{
+  "name": "phayao_hotspot",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
