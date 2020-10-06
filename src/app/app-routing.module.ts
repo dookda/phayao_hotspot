@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'amphoe',
+    loadChildren: () => import('./amphoe/amphoe.module').then( m => m.AmphoePageModule)
+  },
+  {
+    path: 'fullmap',
+    loadChildren: () => import('./fullmap/fullmap.module').then( m => m.FullmapPageModule)
+  },
+  {
+    path: 'report7day',
+    loadChildren: () => import('./report7day/report7day.module').then( m => m.Report7dayPageModule)
+  },
+  {
+    path: 'routing',
+    loadChildren: () => import('./routing/routing.module').then( m => m.RoutingPageModule)
+  },
+  {
+    path: 'tambon',
+    loadChildren: () => import('./tambon/tambon.module').then( m => m.TambonPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,27 +1,29 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-content.background {
+  --background: url(../../assets/img/bg_1.jpg) 0 0/100% 100% no-repeat;
+  font-family: "Bai Jamjuree";
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+div.opci {
+  --ion-background-color: rgba(36, 36, 36, 0.6);
+  -webkit-text-fill-color: rgb(255, 255, 255);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+div.f1 {
+  font-size: 5.2rem;
 }
 
-#container a {
-  text-decoration: none;
+p.i1 {
+  font-size: 1rem;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+[Jamjuree] {
+  font-family: "Bai Jamjuree";
 }

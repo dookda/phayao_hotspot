@@ -1,0 +1,42 @@
+<ion-content padding class="background">
+  <div class="opci">
+    <ion-item>
+      <img
+        src="https://images.vexels.com/media/users/3/137244/isolated/preview/c6b689bd0d2f7baaad783f9b6baa5263-cartoon-fire-illustration-by-vexels.png"
+        width="30%"
+        alt=""
+      />
+      <ion-label text-wrap>ค้นหาเส้นทางไปยังตำแหน่ง hotspot</ion-label>
+      <ion-button color="danger" slot="end" (click)="closeModal()">
+        <ion-icon name="close-circle"></ion-icon>&nbsp;ปิด
+      </ion-button>
+    </ion-item>
+  </div>
+
+  <p></p>
+  <div class="opci">
+    <ion-item>
+      <ion-label>MAP</ion-label>
+      <div class="button_map"></div>
+    </ion-item>
+  </div>
+  <div id="map-tam" style="height: 40%;"></div>
+  <br />
+
+  <br />
+  <div class="opci">
+    <ion-item *ngFor="let a of tamHP">
+      <ion-icon name="pin" color="danger" slot="start"></ion-icon>
+      <ion-label>
+        <h2>ต.{{a.properties.admin.tb_tn}}</h2>
+        <p text-wrap>
+          ละติจูด: {{a.properties.latitude}} ลองจิจูด:
+          {{a.properties.longitude}}
+        </p>
+      </ion-label>
+      <ion-button fill="clear" color="danger" slot="end" (click)="routing(a)">
+        <ion-icon slot="icon-only" name="git-branch"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </div>
+</ion-content>

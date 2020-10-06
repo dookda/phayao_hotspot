@@ -3,21 +3,44 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Ionic App</title>
+  <title>Phayao hotspot</title>
 
   <base href="/" />
 
   <meta name="color-scheme" content="light dark" />
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="msapplication-tap-highlight" content="no" />
 
   <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
 
+  <!-- add external -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,700i&display=swap" rel="stylesheet" />
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPoCPjkmFx9Ud6wPWSu84U31Kilb2ac3g"></script>
+
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 </head>
+<style>
+  .leaflet-control-container .leaflet-routing-container-hide {
+    display: none;
+  }
+
+  .leaflet-routing-alt:last-child {
+    border-bottom: none;
+    display: none;
+  }
+
+  .leaflet-routing-collapse-btn:after {
+    content: "\00d7";
+    display: none;
+  }
+</style>
 
 <body>
   <app-root></app-root>
